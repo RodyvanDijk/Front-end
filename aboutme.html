@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="mainhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>My Projects and Me</title>
+  </head>
+  <body class="indexbody">
+    <header>
+      <h1 class="h1">My Projects and Me</h1>
+      <span class="spanNav" onclick="openNav()" id="slideNavButton"
+        >&#9776;Open</span
+      >
+      <nav class="slideNav" id="slideNav">
+        <ul class="navul">
+          <li class="navli" id="slideNavButton">
+            <a href="#" onclick="closeNav()">&times;</a>
+          </li>
+          <li class="navli">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="navli">
+            <a href="leerprocess.html">Mijn learning process</a>
+          </li>
+          <li class="navli"><a href="projects.html">My projects</a></li>
+          <li class="navli">
+            <a class="currentpage" href="aboutme.html">About me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="indexsection" id="indexSection">
+        <h2>
+          About me
+          <a href="#id1"
+            ><img
+              src="http://icons.iconarchive.com/icons/visualpharm/must-have/256/Zoom-In-icon.png"
+              class="zoomIcon"
+          /></a>
+        </h2>
+        <article>
+          <h3>Over mij</h3>
+          <p>
+            Mijn naam is Rody van dijk, ik ben 16 jaar (27/02/05). Ik ben een
+            leerende software developer en ik woon in Nederland. Ik leer
+            software development omdat het me een interessant onderwerp lijkt,
+            en nu ik het leer vind ik het ook echt interessant. Er is veel om te
+            leren en er zijn veel goeie banen in te vinden.
+          </p>
+        </article>
+        <article>
+          <h3>De school</h3>
+          <p>
+            Ik ga naar Techniek College Rotterdam oftewel TCR. Ik doe daar de
+            opleiding 'Software Developer'. Ik heb geleerd over php, sql, html,
+            css/sccs, javascript en er komen nog meer talen bij in de toekomst.
+            We leren ook meerdere methodes van werke, zoals: scrum, moscow,
+            trello en wireframes etc.
+          </p>
+        </article>
+        <article>
+          <h3>Locatie van de school</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.353423998201!2d4.306821015670706!3d51.85450317969376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89bc59481059651d!2sTechniek%20College%20Rotterdam!5e0!3m2!1snl!2snl!4v1639646297400!5m2!1snl!2snl"
+            width="700"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </article>
+      </section>
+    </main>
+    <fieldset id="id1" class="modal">
+      <section class="modal-content" id="indexSection">
+        <a class="close" href="aboutme.html">&times;</a>
+        <h2>About me</h2>
+        <article>
+          <h3>Over mij</h3>
+          <p>
+            Mijn naam is Rody van dijk, ik ben 16 jaar (27/02/05). Ik ben een
+            leerende software developer en ik woon in Nederland. Ik leer
+            software development omdat het me een interessant onderwerp lijkt,
+            en nu ik het leer vind ik het ook echt interessant. Er is veel om te
+            leren en er zijn veel goeie banen in te vinden.
+          </p>
+        </article>
+        <article>
+          <h3>De school</h3>
+          <p>
+            Ik ga naar Techniek College Rotterdam oftewel TCR. Ik doe daar de
+            opleiding 'Software Developer'. Ik heb geleerd over php, sql, html,
+            css/sccs, javascript en er komen nog meer talen bij in de toekomst.
+            We leren ook meerdere methodes van werke, zoals: scrum, moscow,
+            trello en wireframes etc.
+          </p>
+        </article>
+        <article>
+          <h3>Locatie van de school</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.353423998201!2d4.306821015670706!3d51.85450317969376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89bc59481059651d!2sTechniek%20College%20Rotterdam!5e0!3m2!1snl!2snl!4v1639646297400!5m2!1snl!2snl"
+            width="700"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </article>
+      </section>
+    </fieldset>
+    <aside>
+      <section>
+        <h2>Choose your Theme!</h2>
+        <br />
+        <p><button class="asidebutton">Dark mode NEON</button></p>
+      </section>
+    </aside>
+    <footer>
+      <address>
+        Site designed by:
+        <a href="contact.html" class="footerlink">Rody van Dijk</a><br />
+        <!-- School:
+        <a href="https://www.techniekcollegerotterdam.nl/" class="footerlink"
+          >Techniek College Rotterdam</a
+        ><br />
+        Opleiding:
+        <a
+          href="https://www.techniekcollegerotterdam.nl/it-online/software-developer-bol"
+          class="footerlink"
+          >Software developer</a
+        ><br /> -->
+      </address>
+    </footer>
+    <script src="./style.js"></script>
+  </body>
+</html>
