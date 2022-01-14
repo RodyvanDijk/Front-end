@@ -267,6 +267,7 @@ span.psw {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   z-index: 1;
+  overflow: auto;
 }
 
 .modal-content {
@@ -349,19 +350,19 @@ iframe {
   .spanNav {
     visibility: visible;
     display: block;
-    margin-top: 0.75em;
+    margin-top: 0.9em;
     float: left;
     display: block;
-    font-size: 2em;
+    font-size: 1.8em;
     text-shadow: var(--boxshadow2-textshadow2);
   }
   .spanNav2 {
     visibility: visible;
     display: block;
-    margin-top: 0.75em;
+    margin-top: 0.9em;
     float: right;
     display: block;
-    font-size: 2em;
+    font-size: 1.8em;
     text-shadow: var(--boxshadow2-textshadow2);
   }
   h1.h1 {
