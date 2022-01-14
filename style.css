@@ -367,7 +367,7 @@ span.psw {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(5, 5, 5, 0.979);
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -394,6 +394,54 @@ span.psw {
     font-size: 2em;
     float: right;
     margin-top: -70px;
+  }
+  .slideNav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.979);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #slideNavButton2 {
+    visibility: visible;
+    display: block;
+    color: white;
+    font-size: 2em;
+    float: right;
+    margin-top: -70px;
+  }
+  .themebutton {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .indexsection p {
+    font-size: 1.5em;
+  }
+  .indexsection h3 {
+    font-size: 2em;
+  }
+  .indexsection h2 {
+    font-size: 2.2em;
+  }
+  .modal-content p {
+    font-size: 1.8em;
+  }
+  .modal-content h3 {
+    font-size: 2.3em;
+  }
+  .modal-content h2 {
+    font-size: 2.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */

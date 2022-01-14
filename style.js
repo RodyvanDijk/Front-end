@@ -1,11 +1,15 @@
 function openNav() {
   document.getElementById("slideNav").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("slideNav").style.width = "0";
 }
-
+function openNav2() {
+  document.getElementById("slideNav2").style.width = "250px";
+}
+function closeNav2() {
+  document.getElementById("slideNav2").style.width = "0";
+}
 // functions om theme te zetten
 function setTheme(themeName) {
   localStorage.setItem("theme", themeName);
