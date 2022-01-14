@@ -9,24 +9,51 @@
   </head>
   <body class="indexbody">
     <header>
+      <span class="spanNav" onclick="openNav(), closeNav2()">&#9776;Pages</span>
       <h1 class="h1">My Projects and Me</h1>
-      <span class="spanNav" onclick="openNav()" id="slideNavButton"
-        >&#9776;Open</span
+      <span class="spanNav2" onclick="openNav2(), closeNav()"
+        >Themes&#9776;</span
       >
       <nav class="slideNav" id="slideNav">
-        <ul class="navul">
-          <li class="navli" id="slideNavButton">
-            <a href="#" onclick="closeNav()">&times;</a>
+        <ul class="slidenavul">
+          <a href="#" id="slideNavButton" onclick="closeNav()">&times;</a>
+          <li class="slidenavli">
+            <a class="currentpage" href="index.html">Home</a>
           </li>
-          <li class="navli"><a href="index.html">Home</a></li>
+          <li class="slidenavli">
+            <a href="leerprocess.html">Mijn leer process</a>
+          </li>
+          <li class="slidenavli"><a href="projects.html">Mijn projecten</a></li>
+          <li class="slidenavli"><a href="aboutme.html">Over mij</a></li>
+        </ul>
+      </nav>
+      <nav class="slideNav2" id="slideNav2">
+        <ul class="slidenavul2">
+          <a href="#" id="slideNavButton2" onclick="closeNav2()">&times;</a>
+          <li class="slidenavli2">
+            <a class="themebutton" onclick="setThemeNeonDark()">
+              NEON dark mode
+            </a>
+          </li>
+          <li class="sidenavli2">
+            <a class="themebutton" onclick="setThemeNeonLight()">
+              NEON light mode
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="desktopNav" id="desktopNav">
+        <ul class="navul">
+          <li class="navli">
+            <a href="index.html">Home</a>
+          </li>
           <li class="navli">
             <a class="currentpage" href="leerprocess.html"
               >Mijn learning process</a
             >
           </li>
-          <li class="navli">
-            <a href="projects.html">My projects</a>
-          </li>
+          <li class="navli"><a href="projects.html">My projects</a></li>
           <li class="navli"><a href="aboutme.html">About me</a></li>
         </ul>
       </nav>
@@ -191,7 +218,7 @@
         </article>
       </section>
     </fieldset>
-    <aside>
+    <aside class="aside1">
       <section>
         <h2>Choose your Theme!</h2>
         <br />

@@ -9,15 +9,42 @@
   </head>
   <body class="indexbody">
     <header>
+      <span class="spanNav" onclick="openNav(), closeNav2()">&#9776;Pages</span>
       <h1 class="h1">My Projects and Me</h1>
-      <span class="spanNav" onclick="openNav()" id="slideNavButton"
-        >&#9776;Open</span
+      <span class="spanNav2" onclick="openNav2(), closeNav()"
+        >Themes&#9776;</span
       >
       <nav class="slideNav" id="slideNav">
-        <ul class="navul">
-          <li class="navli" id="slideNavButton">
-            <a href="#" onclick="closeNav()">&times;</a>
+        <ul class="slidenavul">
+          <a href="#" id="slideNavButton" onclick="closeNav()">&times;</a>
+          <li class="slidenavli">
+            <a class="currentpage" href="index.html">Home</a>
           </li>
+          <li class="slidenavli">
+            <a href="leerprocess.html">Mijn leer process</a>
+          </li>
+          <li class="slidenavli"><a href="projects.html">Mijn projecten</a></li>
+          <li class="slidenavli"><a href="aboutme.html">Over mij</a></li>
+        </ul>
+      </nav>
+      <nav class="slideNav2" id="slideNav2">
+        <ul class="slidenavul2">
+          <a href="#" id="slideNavButton2" onclick="closeNav2()">&times;</a>
+          <li class="slidenavli2">
+            <a class="themebutton" onclick="setThemeNeonDark()">
+              NEON dark mode
+            </a>
+          </li>
+          <li class="sidenavli2">
+            <a class="themebutton" onclick="setThemeNeonLight()">
+              NEON light mode
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="desktopNav" id="desktopNav">
+        <ul class="navul">
           <li class="navli">
             <a href="index.html">Home</a>
           </li>
@@ -98,20 +125,21 @@
             trello en wireframes etc.
           </p>
         </article>
-        <article>
+        <article class="iframe">
           <h3>Locatie van de school</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.353423998201!2d4.306821015670706!3d51.85450317969376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89bc59481059651d!2sTechniek%20College%20Rotterdam!5e0!3m2!1snl!2snl!4v1639646297400!5m2!1snl!2snl"
-            width="700"
-            height="350"
+            width="100px"
+            height="50px"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            class="iframe1"
           ></iframe>
         </article>
       </section>
     </fieldset>
-    <aside>
+    <aside class="aside1">
       <section>
         <h2>Choose your Theme!</h2>
         <br />
