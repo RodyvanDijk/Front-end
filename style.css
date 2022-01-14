@@ -28,6 +28,48 @@ section {
   margin: 0;
 }
 
+.themeNeonDark {
+  --backgroundcolor-primary: black;
+  --color-text: white;
+  --boxshadow1-textshadow1: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  --boxshadow2-textshadow2: 0 0 5px #ff0000, 0 0 20px rgba(255, 0, 0, 0.8),
+    0 0 35px rgba(255, 0, 0, 0.7), 0 0 50px rgba(255, 0, 0, 0.6);
+  --current-page: rgb(255, 42, 42);
+  --section-color: rgb(32, 32, 32);
+  --article-color: rgb(63, 63, 63);
+  --text-link: rgb(218, 162, 98);
+  --footer-link: blue;
+  --hover-color: red;
+  --aside-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  --currentpage-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  --asidebutton-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+}
+
+.themeNeonLight {
+  --backgroundcolor-primary: white;
+  --color-text: black;
+  --boxshadow1-textshadow1: 0 0 5px #000000, 0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 0, 0, 0.6);
+  --boxshadow2-textshadow2: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  --current-page: rgb(255, 42, 42);
+  --section-color: rgb(182, 182, 182);
+  --article-color: rgb(211, 210, 210);
+  --text-link: rgb(211, 135, 49);
+  --footer-link: blue;
+  --hover-color: red;
+  --aside-shadow: 0 0 5px #000000, 0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 0, 0, 0.6);
+  --currentpage-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  --asidebutton-shadow: 0 0 5px #000000, 0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 0, 0, 0.6);
+}
+
 .indexbody {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,15 +79,15 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0px;
-  background-color: black;
-  color: white;
+  background-color: var(--backgroundcolor-primary);
+  color: var(--color-text);
 }
 
 h1.h1 {
   padding: 13.5px 30px;
-  color: white;
+  color: var(--color-text);
   float: left;
-  text-shadow: 0 0 5px #ff0000, 0 0 20px rgba(255, 0, 0, 0.8), 0 0 35px rgba(255, 0, 0, 0.7), 0 0 50px rgba(255, 0, 0, 0.6);
+  text-shadow: var(--boxshadow2-textshadow2);
 }
 
 nav {
@@ -58,7 +100,7 @@ nav .navul {
   padding: 0;
   overflow: hidden;
   display: inline-block;
-  color: white;
+  color: var(--color-text);
 }
 
 nav .navul .navli {
@@ -67,18 +109,18 @@ nav .navul .navli {
 }
 
 nav .navul .navli .currentpage {
-  color: #ff2a2a;
-  text-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  color: var(--current-page);
+  text-shadow: var(---currentpage-shadow);
 }
 
 nav .navul .navli a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3em;
-  color: white;
+  color: var(--color-text);
   display: block;
   text-decoration: none;
   padding: 20px 30px;
-  text-shadow: 0 0 5px #ff0000, 0 0 20px rgba(255, 0, 0, 0.8), 0 0 35px rgba(255, 0, 0, 0.7), 0 0 50px rgba(255, 0, 0, 0.6);
+  text-shadow: var(--boxshadow2-textshadow2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -89,11 +131,11 @@ nav .navul .navli a:hover {
 
 .indexsection {
   padding: 5px 10px;
-  background-color: #202020;
+  background-color: var(--section-color);
   width: 70%;
   margin-top: 2em;
-  -webkit-box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: var(--boxshadow1-textshadow1);
+          box-shadow: var(--boxshadow1-textshadow1);
 }
 
 .indexsection h2 {
@@ -119,7 +161,7 @@ footer {
 
 footer .footerlink {
   text-decoration: none;
-  color: blue;
+  color: var(--footer-link);
 }
 
 #slideNavButton {
@@ -134,11 +176,11 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: var(--color-text);
 }
 
 aside {
-  background-color: #202020;
+  background-color: var(--section-color);
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,10 +190,11 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -17.6em;
   margin-right: 1em;
-  -webkit-box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: var(--aside-shadow);
+          box-shadow: var(--aside-shadow);
+  position: absolute;
+  margin-top: 6.3em;
 }
 
 aside .asidebutton {
@@ -165,19 +208,19 @@ aside .asidebutton {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #3f3f3f;
-  color: white;
+  background: var(--article-color);
+  color: var(--color-text);
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
 aside .asidebutton:hover {
-  -webkit-box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: var(--asidebutton-shadow);
+          box-shadow: var(--asidebutton-shadow);
 }
 
 article {
-  background-color: #3f3f3f;
+  background-color: var(--article-color);
 }
 
 #indexSection {
@@ -203,7 +246,7 @@ article {
 
 .close:hover,
 .close:focus {
-  color: red;
+  color: var(--hover-color);
   cursor: pointer;
 }
 
@@ -223,15 +266,16 @@ span.psw {
   border: 0;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
 .modal-content {
-  background-color: #202020;
+  background-color: var(--section-color);
   margin: 5px auto;
   width: 80%;
   padding: 5px 10px;
-  -webkit-box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 0 5px #ffffff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7), 0 0 35px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: var(--boxshadow1-textshadow1);
+          box-shadow: var(--boxshadow1-textshadow1);
 }
 
 .modal-content h2 {
@@ -250,11 +294,11 @@ span.psw {
   position: absolute;
   right: 25px;
   top: 0;
-  color: white;
+  color: var(--color-text);
   font-size: 35px;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 0 5px #ff0000, 0 0 20px rgba(255, 0, 0, 0.8), 0 0 35px rgba(255, 0, 0, 0.7), 0 0 50px rgba(255, 0, 0, 0.6);
+  text-shadow: var(--boxshadow2-textshadow2);
 }
 
 .zoomIconModal {
@@ -267,10 +311,89 @@ span.psw {
 
 .indextextlink {
   text-decoration: none;
-  color: #daa262;
+  color: var(--text-link);
 }
 
 .indextextlink:hover {
-  text-shadow: 0 0 5px #ff0000, 0 0 20px rgba(255, 0, 0, 0.8), 0 0 35px rgba(255, 0, 0, 0.7), 0 0 50px rgba(255, 0, 0, 0.6);
+  text-shadow: var(--boxshadow2-textshadow2);
+}
+
+@media screen and (max-width: 576px) {
+  .desktopNav {
+    visibility: hidden;
+    display: none;
+  }
+  .navli {
+    visibility: hidden;
+    display: none;
+  }
+  header {
+    height: 6em;
+  }
+  .spanNav {
+    visibility: visible;
+    display: block;
+    margin-top: 0.75em;
+    float: left;
+    display: block;
+    font-size: 2em;
+    text-shadow: var(--boxshadow2-textshadow2);
+  }
+  .spanNav2 {
+    visibility: visible;
+    display: block;
+    margin-top: 0.75em;
+    float: right;
+    display: block;
+    font-size: 2em;
+    text-shadow: var(--boxshadow2-textshadow2);
+  }
+  h1.h1 {
+    float: center;
+    display: block;
+    margin-top: 0.5em;
+  }
+  .aside1 {
+    visibility: hidden;
+    display: none;
+  }
+  .indexsection {
+    width: 80%;
+  }
+  .slideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .slideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .slidenavli,
+  .slidenavul {
+    visibility: visible;
+    display: block;
+  }
+  #slideNavButton {
+    visibility: visible;
+    display: block;
+    color: white;
+    font-size: 2em;
+    float: right;
+    margin-top: -70px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

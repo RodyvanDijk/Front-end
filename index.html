@@ -9,15 +9,25 @@
   </head>
   <body class="indexbody">
     <header>
+      <span class="spanNav" onclick="openNav()">&#9776;Pages</span>
       <h1 class="h1">My Projects and Me</h1>
-      <span class="spanNav" onclick="openNav()" id="slideNavButton"
-        >&#9776;Open</span
-      >
+      <span class="spanNav2" onclick="openNav2()">Themes&#9776;</span>
       <nav class="slideNav" id="slideNav">
-        <ul class="navul">
-          <li class="navli" id="slideNavButton">
-            <a href="#" onclick="closeNav()">&times;</a>
+        <ul class="slidenavul">
+          <a href="#" id="slideNavButton" onclick="closeNav()">&times;</a>
+
+          <li class="slidenavli">
+            <a class="currentpage" href="index.html">Home</a>
           </li>
+          <li class="slidenavli">
+            <a href="leerprocess.html">Mijn leer process</a>
+          </li>
+          <li class="slidenavli"><a href="projects.html">Mijn projecten</a></li>
+          <li class="slidenavli"><a href="aboutme.html">Over mij</a></li>
+        </ul>
+      </nav>
+      <nav class="desktopNav" id="desktopNav">
+        <ul class="navul">
           <li class="navli">
             <a class="currentpage" href="index.html">Home</a>
           </li>
@@ -103,17 +113,27 @@
         </article>
       </section>
     </fieldset>
-    <aside>
+    <aside class="aside1">
       <section>
         <h2>Choose your Theme!</h2>
         <br />
-        <p><button class="asidebutton">Dark mode NEON</button></p>
+        <p>
+          <button class="asidebutton" onclick="setThemeNeonDark()">
+            NEON dark mode
+          </button>
+        </p>
+        <br />
+        <p>
+          <button class="asidebutton" onclick="setThemeNeonLight()">
+            NEON light mode
+          </button>
+        </p>
       </section>
     </aside>
     <footer>
       <address>
         Site designed by:
-        <a href="contact.html" class="footerlink">Rody van Dijk</a><br />
+        <a href="aboutme.html" class="footerlink">Rody van Dijk</a><br />
         <!-- School:
         <a href="https://www.techniekcollegerotterdam.nl/" class="footerlink"
           >Techniek College Rotterdam</a
