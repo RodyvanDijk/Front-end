@@ -28,5 +28,7 @@ function setThemeNeonLight() {
     setTheme("themeNeonDark");
   } else if (localStorage.getItem("theme") === "themeNeonLight") {
     setTheme("themeNeonLight");
+  } else {
+    setTheme("themeNeonDark");
   }
 })();

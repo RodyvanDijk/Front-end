@@ -279,6 +279,14 @@ span.psw {
 iframe {
   width: 800px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border: 0px;
+}
+.grid > span {
+  padding: 8px 4px;
+}
 @media screen and (max-width: 576px) {
   .desktopNav {
     visibility: hidden;
@@ -417,6 +425,150 @@ iframe {
     height: 300px;
   }
   footer {
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aside1 {
+    margin-top: 165px;
+    visibility: hidden;
+    display: none;
+  }
+  footer {
+    position: relative;
+  }
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
+  .slideNav {
+    height: 100%;
+    width: 0;
     position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.979);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .slideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  .slidenavli,
+  .slidenavul {
+    visibility: visible;
+    display: block;
+  }
+  #slideNavButton {
+    visibility: visible;
+    display: block;
+    color: white;
+    font-size: 2em;
+    float: right;
+    margin-top: -70px;
+    text-decoration: none;
+  }
+  .slideNav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.979);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #slideNavButton2 {
+    visibility: visible;
+    display: block;
+    color: white;
+    font-size: 2em;
+    float: right;
+    margin-top: -70px;
+    text-decoration: none;
+  }
+  .themebutton {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  .desktopNav {
+    visibility: hidden;
+    display: none;
+  }
+  .navli {
+    visibility: hidden;
+    display: none;
+  }
+  header {
+    height: 6em;
+  }
+  .spanNav {
+    visibility: visible;
+    display: block;
+    margin-top: 0.9em;
+    float: left;
+    display: block;
+    font-size: 1.8em;
+    text-shadow: var(--boxshadow2-textshadow2);
+  }
+  .spanNav2 {
+    visibility: visible;
+    display: block;
+    margin-top: 0.9em;
+    float: right;
+    display: block;
+    font-size: 1.8em;
+    text-shadow: var(--boxshadow2-textshadow2);
+  }
+  .indexsection p {
+    font-size: 1.5em;
+  }
+  .indexsection h3 {
+    font-size: 2em;
+  }
+  .indexsection h2 {
+    font-size: 2.2em;
+  }
+  .modal-content p {
+    font-size: 1.8em;
+  }
+  .modal-content h3 {
+    font-size: 2.3em;
+  }
+  .modal-content h2 {
+    font-size: 2.5em;
+  }
+  .spanNav,
+  .spanNav2 {
+    visibility: visible;
+    display: block;
+  }
+  .slideNav,
+  .slideNav2 {
+    visibility: visible;
+    display: block;
+  }
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
+  h1.h1 {
+    float: center;
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 2.5em;
   }
 }
